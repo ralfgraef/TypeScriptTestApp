@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Tutorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>TypeScript Test-App</h1>
+
+      <!-- output list -->
+      <ul class="item-list"></ul>
+    </div>
+
+    <footer>
+      <form class="new-item-form">
+        <div class="field">
+          <label>Typ:</label>
+          <select id="type">
+            <option value="invoice">Rechnung</option>
+            <option value="payment">Zahlungseingang</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>An / Von:</label>
+          <input type="text" id="tofrom" />
+        </div>
+        <div class="field">
+          <label>Details:</label>
+          <input type="text" id="details" />
+        </div>
+        <div class="field">
+          <label>Betrag (€):</label>
+          <input type="number" id="amount" />
+        </div>
+        <button>Hinzufügen</button>
+      </form>
+
+      <a>by Ralf Gräf</a>
+    </footer>
+
+    <script type="module" src="src/index.ts"></script>
+  </body>
+</html>
